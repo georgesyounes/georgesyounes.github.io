@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Georges Younes</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no"
+    />
+
+    <!-- HOSTED -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="fonts/mdi/css/materialdesignicons.min.css"
+      media="all"
+      rel="stylesheet"
+    />
+
+    <!-- LOCAL -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel='shortcut icon' href='GY.png' type='image/x-icon'/ >
+    <link rel="stylesheet" type="icon" href="">
+
+    <!-- HOSTED -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+
+    <!-- LOCAL -->
+    <script src="scripts/pt.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/modal.js"></script>
+
+<style type="text/css">
+	.ml3 {
+  font-weight: 900;
+  font-size: 3.5em;
+
+
+ 
+}
+
+.hover-item:hover  {
+	background-color: #030596;
+}
+
+/* .particles_full{z-index:4;height:100vh}*/
+/*#home{
+	background-image: url('images/banner.png')
+
+}*/
+
+
+/* ---- reset ---- */ body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } 
+canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */
+ #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #000000; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } 
+ /* ---- stats.js ---- */
+  .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; }
+
+
+  
+
+
+
+</style>
+
+    
+  </head>
+
+
+  <body>
+
+
+
+<!-- <div id="particles-js">
+
+     	<canvas class="particles_full"  style="width: 50%; height: 50%;">
+        </canvas>
+</div> -->
+
+<!-- 
+ <div id="particles-js">
+
+     	<canvas class="particles_full">
+        </canvas>
+</div> -->
+
+
+<!-- particles.js container --> <div id="particles-js"> </div> <!-- stats - count particles -->  <!-- particles.js lib - https://github.com/VincentGarreau/particles.js --> <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib --> <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+
+
+
+
+    <div class="overflow-wrap">
+
+     <h1 class="ml3" >Georges Younes</h1>
+                            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+                           
+  <script type="text/javascript">
+							// Wrap every letter in a span
+                        var textWrapper = document.querySelector('.ml3');
+                        textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+                        anime.timeline({loop: true})
+                       .add({
+                       targets: '.ml3 .letter',
+                       opacity: [0,1],
+                       easing: "easeInOutQuad",
+                       duration: 2250,
+                       delay: (el, i) => 150 * (i+1)
+                       }).add({
+                       targets: '.ml3',
+                       opacity: 0,
+                      duration: 1000,
+                      easing: "easeOutExpo",
+                      delay: 1000
+                      });
+						</script>
+      <section id="home" class="flex height-fix" style="margin:0px; padding:0px;">
+       
+        
+      </section>
+<nav class="flex">
+            <div class="link-wrap">
+              <div class="active page-link" dest="home">home</div>
+              <div class="page-link" dest="about">about</div>
+              <div class="page-link" dest="portfolio">Projects</div>
+             
+              <div class="page-link" dest="contact">contact</div>
+            </div>
+            <i class="mdi mdi-menu"></i>
+          </nav>
+
+      <!-- ABOUT -->
+      <section id="about" style="background-color: #000000";>
+
+
+
+
+        <div class="container flex" >
+
+          <div class="header waypoint" data-animation="slide-in-left" style="color: white">
+            ABOUT
+          </div>
+          <div 
+
+            class="header-bar waypoint " style="color: white"
+            data-animation="slide-in-left"
+            data-delay=".5s"
+          ></div>
+
+          
+          <div class="skills-wrapper flex row-gt-sm">
+            <div
+              class="flex flex-50-gt-sm waypoint"
+              data-animation="slide-in-left"
+            >
+              <img src="images/me.png" class="me">
+              <!-- <div><img class="up-arrow" src="img/up-arrow.png"></div> -->
+             
+              <div style="font-size:20px">
+
+              <p style="color: white">I am an undergraduate computer science student at the Lebanese American University. <br>
+								Grounded and solution-oriented Computer Scientist with a wide variety of experiences. <br>
+							Though i found everything related to a computer intresting, my preferred fields are in software engineering, web/mobile programming and cyber security. </p><br>
+                   <a class="page-link highlight" href="./cv.pdf" target="_blank">View my CV</a>
+                >
+              </div>
+            </div>
+
+            <div
+              class="flex flex-50-gt-sm waypoint bars-wrap"
+              data-animation="slide-in-right"
+            >
+              <div class="bar flex">
+                <div class="bar fill" style="width:90%">
+                  <div class="tag bold flex">Java</div>
+                </div>
+                <span>90%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:80%">
+                  <div class="tag bold flex">HTML/CSS</div>
+                </div>
+                <span>80%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:80%">
+                  <div class="tag bold flex">PHP</div>
+                </div>
+                <span>80%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:80%">
+                  <div class="tag bold flex">JavaScript</div>
+                </div>
+                <span>80%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:70%">
+                  <div class="tag bold flex">C/C++</div>
+                </div>
+                <span>70%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:65%">
+                  <div class="tag bold flex">Python</div>
+                </div>
+                <span>65%</span>
+              </div>
+
+              <div class="bar flex" >
+                <div class="bar fill" style="width:65%" >
+                  <div class="tag bold flex">SQL</div>
+                </div>
+                <span>65%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:70%">
+                  <div class="tag bold flex">Boostrap</div>
+                </div>
+                <span>70%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:60%">
+                  <div class="tag bold flex">Swift</div>
+                </div>
+                <span>55%</span>
+              </div>
+
+              <div class="bar flex">
+                <div class="bar fill" style="width:55%">
+                  <div class="tag bold flex">C#</div>
+                </div>
+                <span>50%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<hr style="color: ">
+      <!-- Projects -->
+      <section class="flex" id="portfolio" style="background-color:#000000" ;>
+        <div class="header waypoint" data-animation="slide-in-right" style="color: white">
+          PROJECTS
+        </div>
+        <div
+          class="header-bar waypoint"
+          data-animation="slide-in-right"
+          data-delay=".3s"
+        ></div>
+
+        <div class="filter-wrap waypoint " data-animation="fade-in">
+          <div class="flex row">
+            <div class="filter hover-item " data-filter="all" style="color:white">ALL</div>
+            <div class="filter hover-item" data-filter=".rails"  style="color:white">Websites</div>
+            <div class="filter hover-item" data-filter=".react"  style="color:white">Mobiles Application</div>
+            <div class="filter hover-item" data-filter=".js"  style="color:white">.NET Platforms</div>
+          </div>
+         <div class="float-bar">
+          <div class="flex row">
+            <div class="filter" data-filter="all">ALL</div>
+            <div class="filter" data-filter=".node">WEBSITES</div>
+            <div class="filter" data-filter=".rails">Mobiles Application</div>
+            <div class="filter" data-filter=".js">.NET Platforms</div>
+          </div>
+        </div>
+        </div>
+
+
+
+        <div id="gallery" class="container flex row wrap waypoint">
+          <div class="mix react" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Profiles Monitors</div>
+                <span class="highlight">XML/JAVA</span>
+              </div>
+              <div class="button" onclick="window.location='https://github.com/georgesyounes/TempHumMonitor'" >VIEW CODE</div>
+            </div>
+          </div>
+
+          <div class="mix js" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Stock Management System</div>
+                <span class="highlight">C#</span>
+              </div>
+                <div class="button" onclick="window.location='https://github.com/georgesyounes/StockManagement'" >VIEW CODE</div>
+            </div>
+          </div>
+
+          <div class="mix rails" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Pharmacy Website</div>
+                <span class="highlight">HTML/CSS/PHP/JS...</span>
+              </div>
+               <div class="button" onclick="window.location='https://github.com/georgesyounes/Web'" >VIEW CODE</div>
+            </div>
+          </div>
+
+          <div class="mix rails" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Car DealerShip Website</div>
+                <span class="highlight">HTML/CSS/PHP/JS...</span>
+              </div>
+               <div class="button" onclick="window.location='https://github.com/georgesyounes/CarDealerShip'" >VIEW CODE</div>
+            </div>
+          </div>
+
+
+           <div class="mix rails" data-my-order="1">
+            <div>
+              <div class="card"></div>
+              <div class="text">
+                <div class="bold">Sketch Gallery Website</div>
+                <span class="highlight">HTML/CSS/PHP/JS/Node</span>
+              </div>
+               <div class="button" onclick="window.location='https://georgesyounes.github.io/gyg/'" >CHECK WEBSITE</div>
+            </div>
+          </div>
+
+         
+
+         
+
+          
+
+        
+
+         
+        </div>
+      </section>
+
+      <section id="blog">
+
+      
+       	
+       
+      </section>
+<hr>
+      <!-- CONTACT -->
+      <section id="contact" >
+      
+         
+        <div class="container flex">
+          <div class="header waypoint" data-animation="slide-in-left">
+            CONTACT
+          </div>
+          <div
+            class="header-bar waypoint"
+            data-animation="slide-in-right"
+            data-delay=".25s"
+            
+          ></div>
+          <div
+            class="highlight waypoint"
+            data-animation="slide-in-right"
+            data-delay=".5s"
+          >
+           
+          </div>
+          
+         <form
+  action="https://formspree.io/f/mwkwwndo"
+  method="POST"
+   class="waypoint"
+            data-animation="pop-in"
+            data-delay=".5s"
+            id="contact-form"
+>
+
+ <input placeholder="Name" type="text" name="name" required id="inputName" style="background-color: black" />
+ 
+ 
+   
+    <input type="text" name="_replyto"
+     placeholder="Enter email"
+            
+              required
+              style="background-color: black">
+ 
+   
+   
+
+
+ <textarea
+            style="background-color: black"
+              placeholder="Your Message"
+              type="text"
+              name="message"
+              
+            ></textarea>
+  <!-- your other form fields go here -->
+
+  
+  <input class="button" type="submit" value="SUBMIT" />
+</form>
+        </div>
+      </section>
+
+      <footer style="background-color: #000000" >
+        <i class="mdi mdi-chevron-double-up page-link" style="background-color: #030596" dest="home"></i>
+
+        <div class="icon-wrap flex row">
+          <a href="https://www.linkedin.com/in/georges-younes-6730971a2/">
+            <div class="flex icon" id="icon-2">
+              <i class="mdi mdi-linkedin"></i>
+            </div>
+          </a>
+         
+          <a href="https://www.instagram.com/georges_younes/">
+            <div class="flex icon" id="icon-4">
+              <i class="mdi mdi-instagram"></i>
+            </div>
+          </a>
+
+          <a href = "mailto: georges.younes01@lau.edu">
+            <div class="flex icon" id="icon-5">
+              <i class="mdi mdi-email"> </i>
+            </div>
+          </a>
+        </div>
+        <div class="info-box">
+          <div class="footnote">
+            GEORGES YOUNES <span class="highlight">&copy;2020</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <div id="preload">
+      <img src="images/me.png" />
+      <img src="img/filler.jpg" />
+      <img src="img/thumb-1.jpg" />
+      <img src="img/thumb-2.jpg" />
+      <img src="img/thumb-4.jpg" />
+       <img src="img/thumb-5.jpg" />
+    
+      
+    
+    </div>
+
+
+
+
+    <script src="scripts/canvas.js"></script>
+<script src="scripts/particles.js"></script>
+<script src="scripts/app.js"></script>
+  </body>
+</html>
+
+
